@@ -1,9 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Paragraph</p>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="The infomation program, in JS" />
+  <meta name="author" content="Yoochan Han" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+  <title>test case</title>
+</head>
+<body>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="./js/script.js"></script>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">test case</span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <form action="#" class="text-box">
+        <!-- Numeric Textfield -->
+        <h2>Test Case</h2>
+        <hr />
+        <h4> for an approximate result, multiply the length value by 3.281 </h4>
+        <p>input radius</p>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="get_radius">
+          <label class="mdl-textfield__label" for="get_radius">input radius here ...</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="CaseTest()">
+          Caculate
+        </button>
+        <div>
+          <br />
+          <p id="progress1"></p>
+          <br />
+          <p id="progress2"></p>
+          <br />
+          <p id="progress3"></p>
+          <br />
+          <p id="Ans"></p>
+        </div>
+  </div>
+  <br />
+  <!-- Accent-colored raised button with ripple -->
+
+  </form>
+  </main>
+  </div>
+</body>
 </html>
