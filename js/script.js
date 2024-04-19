@@ -6,6 +6,6 @@
 
 function CaseTestFahrenheit() {
   const fahrenheit = parseFloat(document.getElementById("get_fahrenheit").value)
-  const celsiusr = (fahrenheit-32) * 5/9
-  document.getElementById("Ans").innerHTML = fahrenheit + "ºF" + " in celsiusr is " + celsiusr.toFixed(3) + "ºC"
+  const celsius = (fahrenheit-32) * 5/9
+  document.getElementById("Ans").innerHTML = fahrenheit + "ºF" + " in celsius is " + celsius.toFixed(3) + "ºC"
 }
