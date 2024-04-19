@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="The infomation program, in JS" />
+  <meta name="description" content="The information program, in JS" />
   <meta name="author" content="Yoochan Han" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
@@ -24,16 +24,16 @@
         <!-- Numeric Textfield -->
         <h2>Test Case</h2>
         <hr />
-        <h4> for an approximate result, multiply the length value by 3.281 </h4>
-        <p>Meter to Foot calculator</p>
+        <h4>Formula, (fahrenheit-32) * 5/9 = celsiusr </h4>
+        <p>converts fahrenheit to celsiusr</p>
         <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="get_length">
-          <label class="mdl-textfield__label" for="get_length">input length in meter here ...</label>
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="get_fahrenheit">
+          <label class="mdl-textfield__label" for="get_fahrenheit">input fahrenheit ...</label>
           <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="CaseTest()">
-          Caculate
+          onclick="CaseTestFahrenheit()">
+          Calculate
         </button>
         <div>
           <br />
