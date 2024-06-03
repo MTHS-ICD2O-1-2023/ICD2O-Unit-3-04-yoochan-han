@@ -21,3 +21,9 @@ h2 {
   color: darkgreen;
   font-style: oblique;
 }
+
+.right-image {
+  position: relative;
+  float: right;
+  right: 40px;
+}
